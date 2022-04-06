@@ -1,0 +1,30 @@
+package com.overriding;
+
+public class parentt {
+	
+ 
+	    void sum(int a,int b) {
+	        
+	        System.out.println("sum1: "+(a+b));
+	    }
+}
+
+package com.overriding;
+
+public class childo extends parentt{
+	void sum(int a,int b) {
+		System.out.println("sum:"+(a+b));
+	}
+public static void main(String[] args) {
+        
+        childo obj1 = new childo();
+        
+        parentt obj2 = new parentt();
+        
+        obj1.sum(2, 3);
+        
+        obj2.sum(3, 3);
+        
+    }
+
+}
