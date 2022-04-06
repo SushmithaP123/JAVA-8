@@ -1,0 +1,53 @@
+package com.overloading;
+
+public class overloading {
+	private int a;
+	overloading(){
+		System.out.println("empty");
+	}
+   overloading(int a){
+    this.a=a;
+   }
+}
+package com.overloading;
+
+public class students {
+	private int rollno;
+	private String fname;
+	private String lname;
+	
+	students(){
+		System.out.println("hi im an empty constructor");
+	}
+	students(int rollno){
+		System.out.println("roll number: "+rollno);
+		this.rollno=rollno;
+		
+
+	}
+	students(String fname,String lname){
+		 System.out.println("fname lname: "+fname +lname);
+		
+		this.fname=fname;
+		this.lname=lname;
+		
+
+	}
+	public static void main(String[] args) {
+		students obj1=new students();
+		students obj2=new students(12345);
+		students obj3=new students("sush","prak");
+		
+		obj1.sum(10,20);
+		obj2.sum(20,30,10);
+		
+	}
+     void sum(int a,int b) {
+ 		System.out.println("sum of 2: "+(a+b));
+
+     }
+     void sum(int a,int b,int c) {
+ 		System.out.println("sum of 3: "+(a+b+c));
+
+     }
+    
