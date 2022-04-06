@@ -1,0 +1,52 @@
+package assign;
+
+public interface area_per {
+	void rect_area(int l,int b);
+	void rect_peri(int l,int w);
+	void box_area(int l,int w,int h);
+	void box_peri(int a);
+
+}
+
+package assign;
+
+public class area implements area_per {
+
+	@Override
+	public void rect_area(int l, int b) {
+     System.out.println(l*b);		
+	}
+
+	@Override
+	public void rect_peri(int l, int w) {
+	     System.out.println(2*(l+w));		
+		
+	}
+
+	@Override
+	public void box_area(int l, int w, int h) {
+	     System.out.println(2*(l*w)+2*(l*h)+2*(h*w));		
+		
+	}
+
+	@Override
+	public void box_peri(int a) {
+	     System.out.println(4*a);		
+
+		
+	}
+  }
+package newsir;
+
+public class mainn {
+	 public static void main(String[] args) {
+   area a=new area();
+   a.box_area(1, 01, 02);
+   a.box_peri(5);
+   a.rect_area(5,2);
+   a.rect_peri(2, 10);
+
+}
+}
+
+	
