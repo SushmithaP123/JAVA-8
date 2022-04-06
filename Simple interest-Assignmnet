@@ -1,0 +1,19 @@
+package assignmnet;
+
+import java.util.Scanner;
+
+public class simple_interest {
+	public static void main(String[] args) {
+		float p,t,r,SI;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter p:");
+		p=scanner.nextInt();
+		System.out.println("enter t:");
+		t=scanner.nextInt();
+		System.out.println("enter r:");
+		r=scanner.nextInt();
+		scanner.close();
+SI=(p*t*r)/100;
+System.out.println(SI);
+}
+}
