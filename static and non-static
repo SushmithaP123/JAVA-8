@@ -1,0 +1,39 @@
+package com.news;
+
+public class staticandnonstatic {
+	
+	public staticandnonstatic() {
+		System.out.println("empty constructor");
+	}
+	public staticandnonstatic(int x) {
+		System.out.println("parameterised constructor"+ x);
+
+	}
+	static {
+		System.out.println("static block");
+
+	}
+	{
+		System.out.println("non-static block");
+
+	}
+
+
+  public void sum(int a,int b) {
+		System.out.println("sum==>"+(a+b));
+ }
+  public static void sub(int s,int t) {
+		System.out.println("sub==>"+(s-t));
+  }
+  public static void main(String[] args) {
+	  staticandnonstatic object1=new staticandnonstatic();
+	  staticandnonstatic object2=new staticandnonstatic();
+	  staticandnonstatic object3=new staticandnonstatic();
+	  staticandnonstatic object4=new staticandnonstatic();
+	  staticandnonstatic object5=new staticandnonstatic(72);
+
+	  staticandnonstatic.sub(10, 05);
+	  object1.sum(10, 10);
+	  object2.sum(100, 10);
+	  object3.sum(1000, 10);
+	  object4.sum(10000, 10);
