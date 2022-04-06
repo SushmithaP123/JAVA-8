@@ -1,0 +1,33 @@
+package com.abstractclass;
+
+public abstract class abstractclass {
+	abstract void sum(int a,int b); 
+	
+	void sub(int a,int b) {
+		System.out.println("sub is: "+(a-b));
+	}
+	
+}
+package com.abstractclass;
+
+public class abstractclasstest extends abstractclass {
+	@Override
+	void sum(int a,int b) {
+		System.out.println("sum by overriding: "+(a+b));
+		}
+	
+	void multiply() {
+		System.out.println("multiply method");
+
+	}
+public static void main(String[] args) {
+	abstractclasstest test1=new abstractclasstest();
+			test1.sum(10, 10);
+	        test1.sub(10, 05);
+	        test1.multiply();
+	        abstractclass test2=new abstractclasstest();
+	        test2.sub(3,2);
+	        test2.sum(60,100);
+}
+           
+}
