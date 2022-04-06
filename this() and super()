@@ -1,0 +1,65 @@
+package com.test.inheritance;
+
+public class TestInheritance {
+	 public TestInheritance(){
+	        
+	        System.out.println("IN PARENT CONSTRUCTOR");
+	        
+	    }
+	    
+	    public TestInheritance(String name){
+	        
+	        System.out.println("IN PARENT CONSTRUCTOR with parameter"+name);
+	        this.name=name;
+	        
+	    }
+	    
+	   
+	    
+	     int a = 1;
+	     String name = "Some Name";
+	    
+	   
+	 
+}
+package com.test.inheritance;
+
+public class TestInheritanceChild extends TestInheritance{
+
+    public TestInheritanceChild() {
+
+
+
+        super(" DEEPA S");
+        System.out.println("In CHILD CONSTRUCTOR"+super.a);
+    
+    }
+    
+    public TestInheritanceChild(String location) {
+
+
+
+        this();
+        System.out.println("In CHILD CONSTRUCTOR with parameter:"+location);
+        this.location = location;
+    
+    }
+   
+   
+    int c = 3;
+   
+    String location="loc";
+
+}
+package com.test.inheritance;
+
+public class TestInhiritanceInMain {
+
+    Object t;
+    
+    public static void main(String[] args) {
+ 
+    	TestInheritanceChild test = new TestInheritanceChild("karnataka"); 
+    }
+
+}
