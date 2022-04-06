@@ -1,0 +1,104 @@
+package com.objects;
+
+public class student {
+ int rollno;
+ String name;
+ String school;
+ 
+public int getRollno() {
+	return rollno;
+}
+public void setRollno(int rollno) {
+	this.rollno = rollno;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getSchool() {
+	return school;
+}
+public void setSchool(String school) {
+	this.school = school;
+}
+ student(){
+	 
+ }
+ student(int rollno,String name,String school){
+	 this();
+	 this.rollno=rollno;
+	 this.name=name;
+	 this.school=school;
+ }
+}
+package com.objects;
+
+public class studentcontinue {
+	
+	public static void main(String[] args) {
+		student one=new student();
+		student two=new student();
+		student three=new student();
+		student four=new student();
+		student five=new student(123,"sushsush","bgs");
+
+		one.setName("sushmitha");
+		two.setName("Deepa");
+		three.setName("Prakash");
+		four.setName("manju");
+		
+		one.setRollno(1);
+		two.setRollno(2);
+		three.setRollno(3);
+		four.setRollno(4);
+		
+		one.setSchool("abc");
+		two.setSchool("def");
+		three.setSchool("ghi");
+		four.setSchool("jkl");
+		
+		
+		System.out.println(one.getSchool());
+		System.out.println(one.getName());
+		System.out.println(one.getRollno());
+
+		System.out.println(two.getSchool());
+		System.out.println(two.getName());
+		System.out.println(two.getRollno());
+
+		System.out.println(three.getSchool());
+		System.out.println(three.getName());
+		System.out.println(three.getRollno());
+		
+		System.out.println(four.getSchool());
+		System.out.println(four.getName());
+		System.out.println(four.getRollno());
+		
+		System.out.println(five.getSchool());
+		System.out.println(five.getName());
+		System.out.println(five.getRollno());
+
+	    String str1="sush";
+	    String str2="deepa";
+	    String str3=new String("pappa");
+	    String str4=new String("pappa");
+	    if(str1==str2)
+	    {
+			System.out.println("normal1");
+
+	    }
+	    if(str3==str4) {
+	    	System.out.println("normal2");
+	    }
+	    if(str1.equals(str2)) {
+	    	System.out.println("new method11");
+	    }
+	    if(str3.equals(str4)) {
+	    	System.out.println("new method222");
+	    }
+
+	}
+
+}
